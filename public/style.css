@@ -295,14 +295,14 @@ html {
   margin-left: -2.7em;
   width: 5.4em;
   height: 5.4em;
-  background-color: #8b8a8a;
+  background-color: #8b8a8a !important;
 }
 
 #hill {
   position: absolute;
   width: 7.1em;
   height: 7.1em;
-  top: 1.7em;
+  top: 1.7em;  
   left: 1.7em;
   background-color: transparent;
   border-left: .25em solid whitesmoke;
@@ -315,7 +315,7 @@ html {
   width: 7.1em;
   height: 7.1em;
   left: 0;
-  background-color: #8b8a8a;
+  background-color: #8b8a8a !important;
 }
 
 #box {
