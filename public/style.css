@@ -178,7 +178,7 @@ contact {
   gap: 20px;
   padding: 20px;
   justify-content: center;
-  background-color: #201c19;
+  background-color: #8b8a8a;
 }
 
 .project-box {
@@ -189,7 +189,7 @@ contact {
   transition: transform 0.3s ease;
   cursor: pointer;
   text-align: center;
-  background-color: #201c19;
+  background-color: #8b8a8a;
 }
 
 .project-box a {
@@ -215,7 +215,7 @@ contact {
   padding: 20px;
   border: 2px solid #ddd;
   border-radius: 8px;
-  background-color: #201c19;
+  background-color: #8b8a8a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
