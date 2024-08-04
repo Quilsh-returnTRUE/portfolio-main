@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quilsh-returnTRUE/portfolio.git"
+  },
+  "author": "JohnShallbetter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quilsh-returnTRUE/portfolio/issues"
+  },
+  "homepage": "https://github.com/Quilsh-returnTRUE/portfolio#readme",
+  "description": "",
+  "dependencies": {
+    "firebase": "^10.12.4"
+  }
+}

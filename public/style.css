@@ -1,0 +1,286 @@
+@font-face {
+  font-family: CaviarDreams;
+  src: url("/Quicksand-VariableFont_wght.tff") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #201c19;
+  font-family: "CaviarDreams", sans-serif;
+}
+
+* {
+  overflow-x: clip;
+}
+
+main {
+  margin: 0;
+  color: white;
+  opacity: 0;
+  transition: opacity 230ms;
+  opacity: 1;
+  min-height: 100vh;
+}
+
+contact {
+  text-align: center;
+}
+
+.container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 40px;
+  max-width: 30vw;
+  text-align: center;
+}
+
+.centered-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.footer {
+  bottom: 0;
+  float: bottom;
+  left: 0;
+  background-color: #2b2b2b;
+  width: 100%;
+  height: auto;
+  clear: both;
+  text-align: left;
+  border-top: 1px solid #ccc;
+  color: white;
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.lang {
+  text-align: center;
+}
+
+.navbar h1 {
+  text-align: left;
+}
+.navbar {
+  position: fixed; /* Keeps the navbar fixed at the top of the viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: #2b2b2b; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 10px 0;
+  z-index: 1000; /* Ensures it stays on top of other content */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-content {
+  display: flex;
+  flex-direction: column; /* Stack the name and links vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  width: 100%;
+  max-width: 1200px; /* Center the content */
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: #777777;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 10px; /*this is for the roundimg for nav bar */
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  float: none;
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #777777;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: rgb(35, 26, 46);
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 150%;
+  height: 150%;
+  opacity: 0;
+}
+
+.project-overview {
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #201c19;
+}
+
+.project-box {
+  width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  background-color: #201c19;
+}
+
+.project-box a {
+  text-decoration: none;
+  color: inherit;
+  background-color: #f57979;
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-box h3 {
+  margin: 10px;
+  font-size: 1.2em;
+  background-color: transparent;
+}
+
+.project-details {
+  margin: 40px 0;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #201c19;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+/*
+.project-details .project-image img {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+  width: 66%;
+  
+}
+*/
+
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.middle-aligned-image {
+  max-width: 600px;
+  width: 66%;
+  height: auto;
+}
+
+#project2 .middle-aligned-image {
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+}
+
+#project3 .middle-aligned-image {
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+}
+
+.left-aligned-image {
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+}
+
+.project-info {
+  flex: 1;
+  text-align: center;
+}
+
+.project-details h2 {
+  margin-top: 0;
+}
+
+.project-details p {
+  margin: 0;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}

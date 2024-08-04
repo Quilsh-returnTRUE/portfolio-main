@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav class="navbar fade-in">
+      <div class="navbar-context">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <h3 style="padding-top: 50px; color: white; text-align: center">
+        Projects(Click me)
+      </h3>
+
+      <section class="project-overview">
+        <div class="project-box" id="project1-link">
+          <a href="#project1">
+            <div class="project-image">
+              <img src="/images/espSS.png" alt="Project 1 Thumbnail" />
+            </div>
+            <h3>CSGO Cheat</h3>
+          </a>
+        </div>
+        <div class="project-box" id="project2-link">
+          <a href="#project2">
+            <div class="project-image">
+              <img src="/images/solvedOnly.png" alt="Project 2 Thumbnail" />
+            </div>
+            <h3>Sudoku Solver</h3>
+          </a>
+        </div>
+        <!-- Add more project-box divs as needed -->
+      </section>
+
+      <section id="project1" class="project-details">
+        <div class="project-image">
+          <img
+            class="middle-aligned-image"
+            src="/images/espSS.png"
+            alt="Project 1 Full Image"
+          />
+        </div>
+        <div class="project-info">
+          <h2>CSGO Cheat</h2>
+          <p>
+            Counter strike global offensive is a popular multiplayer video game
+            with over 1.4 Million active players. The cheat has multiple things
+            inside including ESP(extra sensory input) which is boxes draw around
+            players which render through walls, Aimbot which no matter where the
+            user is looking will instantly lock onto the enemy, and a triggerbot
+            which will auto-shoot if the users crosshair is over an enemy. This
+            works by reading and writing to the games process memory in ram.
+            popular video games, like counter-strike, have anti cheats which
+            prevent random exe to attatch to the process and do exactly that.
+            The way I got around Valve(the anticheat) was by coding a Kernel
+            driver ,which operates with the highest permissions on a computer,
+            and from that using a communicaiton method called IOCTL codes, which
+            will send information i request from my user-mode exe, to the driver
+            which will execute instructions. This is undetected by the
+            anti-cheat. After getting a handle to the game, I then get the
+            process ID and client base address. From there I can use memory
+            offsets to find the player, entity list, and everything i need about
+            the game. Once i get a valid enemy from the ent list, I can get the
+            coordinates. But wait, not done yet. The coordinates are 3d which
+            must be converted to 2d(on your screen) to be able to draw a box
+            around them. For this I use a world-to-screen function, which is a
+            formula that converts 3d coords to 2d. After that I use the popular
+            rendering software ImGui to draw a box every frame around the
+            player.
+          </p>
+        </div>
+      </section>
+
+      <section id="project2" class="project-details">
+        <div class="project-image">
+          <img
+            class="middle-aligned-image"
+            src="/images/sudokuPic - Copy.png"
+            alt="Project 2 Full Image"
+          />
+
+          <div class="project-info">
+            <h2>Sudoku Solver</h2>
+            <p>
+              This sudoku solver takes in a 9x9 sudoku board and using recursive
+              backtracking, systematically solves the board. I was first making
+              this in python, but realized i could do it in c++, making it solve
+              instantly. First, we have to define what the rules for sudoku are.
+              1. Each row and column must contain a number from 1-9, without
+              repetitions. 2. the digits can only occur once per block(nonet).
+              3. The sum of every single row, column, and nonet must equal 45.
+              Now to the code. First it has to find an empty cell. For that
+              empty cell, it has to try each number from 1-9. Then validate the
+              placement to see if the number in the cell satisfies all rules. If
+              it is valid, call the solver function to solve the remaining grid.
+              If no number can be placed that satisfies all constraints,
+              backtrack by undoing the current placement and then it tries the
+              next number.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
