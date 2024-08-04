@@ -33,7 +33,7 @@ contact {
   position: fixed;
   display: flex;
   flex-direction: column;
-  right: 40px;
+  right: 30px;
   max-width: 30vw;
   text-align: center;
 }
