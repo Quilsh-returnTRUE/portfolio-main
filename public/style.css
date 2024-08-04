@@ -21,9 +21,10 @@ body {
   background-color: #f0f0f0;
 }
 
+
 #box {
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: 400px;
   background-color: #3498db;
   color: white;
   display: flex;
@@ -38,9 +39,6 @@ body {
 #clickCount {
   user-select: none;
 }
-
-
-
 
 * {
   overflow-x: clip;
