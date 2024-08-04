@@ -29,6 +29,14 @@ contact {
   text-align: center;
 }
 
+.about-me{
+  max-width: 33%; 
+  text-align: center; 
+  background-color: #6e6e6e;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
 .container {
   position: fixed;
   display: flex;
