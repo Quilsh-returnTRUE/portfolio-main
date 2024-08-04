@@ -12,6 +12,36 @@ body {
   overflow: hidden;
 }
 
+.click-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#clickCount {
+  user-select: none;
+}
+
+
+
+
 * {
   overflow-x: clip;
 }
