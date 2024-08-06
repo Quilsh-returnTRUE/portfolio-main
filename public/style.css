@@ -5,10 +5,19 @@
   font-style: normal;
 }
 
+.grad {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  );
+}
+
 body {
   margin: 0;
   font-family: "CaviarDreams", sans-serif;
   overflow: hidden;
+  background-color: rgb(31, 31, 75);
 }
 
 svg {
@@ -31,7 +40,7 @@ svg {
 #box {
   width: 400px;
   height: 400px;
-  background-color: #3498db;
+  background-color: #191e4d;
   color: white;
   display: flex;
   justify-content: center;
@@ -65,20 +74,33 @@ contact {
 }
 
 .about-me {
-  max-width: 33%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 70%;
   text-align: center;
-  background-color: #6e6e6e;
-  border: 2px solid #ddd;
+  background-color: transparent;
+  border: 2px solid white;
   border-radius: 8px;
   padding: 5px;
 }
 
-.container {
-  position: fixed;
+.general {
   display: flex;
+  align-content: center;
+  justify-content: center;
   flex-direction: column;
-  right: 20px;
-  max-width: 30vw;
+  max-width: 80%;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -223,7 +245,7 @@ contact {
   gap: 20px;
   padding: 20px;
   justify-content: center;
-  background-color: #6e6e6e;
+  background-color: transparent;
 }
 
 .project-box {
@@ -234,7 +256,7 @@ contact {
   transition: transform 0.3s ease;
   cursor: pointer;
   text-align: center;
-  background-color: #6e6e6e;
+  background-color: transparent;
 }
 
 .project-box a {
@@ -258,11 +280,11 @@ contact {
 .project-details {
   margin: 40px 0;
   padding: 20px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  background-color: #6e6e6e;
+  background-color: transparent;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid #ddd;
 }
 /*
 .project-details .project-image img {

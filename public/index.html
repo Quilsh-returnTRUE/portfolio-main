@@ -74,7 +74,7 @@
             d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"
           />
           <path
-            fill="#f15bb5"
+            fill="#8C00FF"
             class="in-top"
             d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"
           />
@@ -91,21 +91,41 @@
         </svg>
       </div>
       <br />
-      <div style="display: flex">
-        <div style="margin-top: 80px" class="container">
+
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: rgb(255, 255, 255);
+          background-color: transparent;
+        "
+      >
+        <div
+          style="width: 40%; height: auto; margin-top: 80px"
+          class="container"
+        >
           <img
             src="images/gradpicCropped.png"
             alt="gradpicCropped"
             class="centered-image"
           />
           <p>
-            I am a 17 year old software engineer going onto my freshman year at
-            the University Of South Alabama, currently getting a major in
+            I am a 17 year old software engineerasf going onto my freshman year
+            at the University Of South Alabama, currently getting a major in
             computer science.Also, i am joining the Alabama Army National Gaurd
             with the hopes of my MOS being 15W, which is UAV piloting.
           </p>
 
           <div class="lang" style="margin-bottom: 13px; margin-top: 13px">
+            <img
+              src="/images/c++trans.png"
+              height="75"
+              width="75"
+              alt="language: C++"
+              title="C++"
+            />
             <img
               src="/images/javajavajava.png"
               height="75"
@@ -123,15 +143,6 @@
               height="75"
               alt="css logo"
               title="CSS"
-            />
-          </div>
-          <div class="lang" style="margin-bottom: 13px">
-            <img
-              src="/images/c++trans.png"
-              height="75"
-              width="75"
-              alt="language: C++"
-              title="C++"
             />
             <img
               src="/images/pythonlogotrans.png"
@@ -155,319 +166,247 @@
             />
           </a>
         </div>
-        <div style="width: 65vw; color: white; background-color: transparent">
-          <div style="padding: 1em; padding-top: 3em">
-            <div class="about-me">
-              <h3>About me</h3>
-              <p id="projects">
-                I've been programming for around 3 years, starting off in a
-                HighSchool python and JavaScript class. These classes didn't
-                teach me much about coding but definetly sparked my interest. I
-                would do extra projects at home, outside of the assigned ones.
-                In March of 2024, I left behind higher level languages and
-                started learning lower-level, like c++ and c#. I came to fall in
-                love with c++ and still do code in it every day. I also started
-                working on web applications, like this one, about June of 2024.
-              </p>
 
-              <p>
-                In my freetime I enjoy hunting, shooting guns, hanging out with
-                friends, and swimming. I am also a Muay Thai fighter and with my
-                8 year wrestling background, fell in love with BJJ and
-                competing.
-              </p>
-            </div>
+        <div class="general" style="padding: 1em; padding-top: 3em">
+          <div style="border-radius: 8px; border: 2px solid white">
+            <h3>About me</h3>
+            <p id="projects">
+              I've been programming for around 3 years, starting off in a
+              HighSchool python and JavaScript class. These classes didn't teach
+              me much about coding but definetly sparked my interest. I would do
+              extra projects at home, outside of the assigned ones. In March of
+              2024, I left behind higher level languages and started learning
+              lower-level, like c++ and c#. I came to fall in love with c++ and
+              still do code in it every day. I also started working on web
+              applications, like this one, about June of 2024.
+            </p>
 
-            <div>
-              <a href="/fun/index.html">Click me</a>
-            </div>
+            <p>
+              In my freetime I enjoy hunting, shooting guns, hanging out with
+              friends, and swimming. I am also a Muay Thai fighter and with my 8
+              year wrestling background, fell in love with BJJ and competing.
+            </p>
+          </div>
 
-            <div style="margin-top: 50px">
-              <h3 style="text-align: center">Projects</h3>
-              <section class="project-overview">
-                <div class="project-box" id="project1-link">
-                  <a href="#project1">
-                    <div class="project-image">
-                      <img
-                        style="height: 176px; width: auto"
-                        src="/images/espSS.png"
-                        alt="Project 1 Thumbnail"
-                      />
-                    </div>
-                    <h3>CSGO Cheat</h3>
-                  </a>
-                </div>
-                <div class="project-box" id="project2-link">
-                  <a href="#project2">
-                    <div
-                      class="project-image"
-                      style="background-color: #0c0b0c"
-                    >
-                      <img
-                        style="height: 176px; width: auto"
-                        src="/images/solvedOnly.png"
-                        alt="Project 2 Thumbnail"
-                      />
-                    </div>
-                    <h3>Sudoku Solver</h3>
-                  </a>
-                </div>
-                <div class="project-box" id="project3-link">
-                  <a href="#project3">
-                    <div
-                      class="project-image"
-                      style="background-color: #000000"
-                    >
-                      <img
-                        style="height: 176px; width: auto"
-                        src="/images/asteroids.png"
-                        alt="Project 1 Thumbnail"
-                      />
-                    </div>
-                    <h3>Asteroids clone</h3>
-                  </a>
-                </div>
-                <!-- Add more project-box divs as needed -->
-              </section>
+          <div style="padding-top: 10px">
+            <a style="color: white; font-size: 10px" href="/fun/index.html"
+              >Super Secret link</a
+            >
+          </div>
 
-              <section id="project1" class="project-details">
-                <div class="project-image">
+          <div style="margin-top: 50px">
+            <h3 style="text-align: center">Projects</h3>
+            <section class="project-overview">
+              <div class="project-box" id="project1-link">
+                <a href="#project1">
+                  <div class="project-image">
+                    <img
+                      style="height: 176px; width: auto"
+                      src="/images/espSS.png"
+                      alt="Project 1 Thumbnail"
+                    />
+                  </div>
+                  <h3>CSGO Cheat</h3>
+                </a>
+              </div>
+              <div class="project-box" id="project2-link">
+                <a href="#project2">
+                  <div class="project-image" style="background-color: #0c0b0c">
+                    <img
+                      style="height: 176px; width: auto"
+                      src="/images/solvedOnly.png"
+                      alt="Project 2 Thumbnail"
+                    />
+                  </div>
+                  <h3>Sudoku Solver</h3>
+                </a>
+              </div>
+              <div class="project-box" id="project3-link">
+                <a href="#project3">
+                  <div class="project-image" style="background-color: #000000">
+                    <img
+                      style="height: 176px; width: auto"
+                      src="/images/asteroids.png"
+                      alt="Project 1 Thumbnail"
+                    />
+                  </div>
+                  <h3>Asteroids clone</h3>
+                </a>
+              </div>
+              <!-- Add more project-box divs as needed -->
+            </section>
+
+            <section id="project1" class="project-details">
+              <div class="project-image">
+                <img
+                  class="middle-aligned-image"
+                  src="/images/espSS.png"
+                  alt="Project 1 Full Image"
+                />
+              </div>
+              <div class="project-info">
+                <h2>CSGO Cheat</h2>
+                <p>
+                  Counter strike global offensive is a popular multiplayer video
+                  game with over 1.4 Million active players. The cheat has
+                  multiple things inside including ESP(extra sensory input)
+                  which is boxes draw around players which render through walls,
+                  Aimbot which no matter where the user is looking will
+                  instantly lock onto the enemy, and a triggerbot which will
+                  auto-shoot if the users crosshair is over an enemy. This works
+                  by reading and writing to the games process memory in ram.
+                  popular video games, like counter-strike, have anti cheats
+                  which prevent random exe to attatch to the process and do
+                  exactly that. The way I got around Valve(the anticheat) was by
+                  coding a Kernel driver ,which operates with the highest
+                  permissions on a computer, and from that using a communicaiton
+                  method called IOCTL codes, which will send information i
+                  request from my user-mode exe, to the driver which will
+                  execute instructions. This is undetected by the anti-cheat.
+                  After getting a handle to the game, I then get the process ID
+                  and client base address. From there I can use memory offsets
+                  to find the player, entity list, and everything i need about
+                  the game. Once i get a valid enemy from the ent list, I can
+                  get the coordinates. But wait, not done yet. The coordinates
+                  are 3d which must be converted to 2d(on your screen) to be
+                  able to draw a box around them. For this I use a
+                  world-to-screen function, which is a formula that converts 3d
+                  coords to 2d. After that I use the popular rendering software
+                  ImGui to draw a box every frame around the player.
+                </p>
+              </div>
+            </section>
+
+            <section id="project2" class="project-details">
+              <div class="project-image">
+                <img
+                  class="middle-aligned-image"
+                  src="/images/sudokuPic - Copy.png"
+                  alt="Project 2 Full Image"
+                />
+
+                <a
+                  href="https://github.com/Quilsh-returnTRUE/Sudoku-Solver"
+                  style="padding: 20px"
+                  target="_blank"
+                >
                   <img
-                    class="middle-aligned-image"
-                    src="/images/espSS.png"
-                    alt="Project 1 Full Image"
+                    src="/images/githubPicBackground.png"
+                    alt="Contact Me"
+                    width="50"
+                    height="50"
+                    title="GitHub"
                   />
-                </div>
+                </a>
                 <div class="project-info">
-                  <h2>CSGO Cheat</h2>
+                  <h2>Sudoku Solver</h2>
                   <p>
-                    Counter strike global offensive is a popular multiplayer
-                    video game with over 1.4 Million active players. The cheat
-                    has multiple things inside including ESP(extra sensory
-                    input) which is boxes draw around players which render
-                    through walls, Aimbot which no matter where the user is
-                    looking will instantly lock onto the enemy, and a triggerbot
-                    which will auto-shoot if the users crosshair is over an
-                    enemy. This works by reading and writing to the games
-                    process memory in ram. popular video games, like
-                    counter-strike, have anti cheats which prevent random exe to
-                    attatch to the process and do exactly that. The way I got
-                    around Valve(the anticheat) was by coding a Kernel driver
-                    ,which operates with the highest permissions on a computer,
-                    and from that using a communicaiton method called IOCTL
-                    codes, which will send information i request from my
-                    user-mode exe, to the driver which will execute
-                    instructions. This is undetected by the anti-cheat. After
-                    getting a handle to the game, I then get the process ID and
-                    client base address. From there I can use memory offsets to
-                    find the player, entity list, and everything i need about
-                    the game. Once i get a valid enemy from the ent list, I can
-                    get the coordinates. But wait, not done yet. The coordinates
-                    are 3d which must be converted to 2d(on your screen) to be
-                    able to draw a box around them. For this I use a
-                    world-to-screen function, which is a formula that converts
-                    3d coords to 2d. After that I use the popular rendering
-                    software ImGui to draw a box every frame around the player.
+                    This sudoku solver takes in a 9x9 sudoku board and using
+                    recursive backtracking, systematically solves the board. I
+                    was first making this in python, but realized i could do it
+                    in c++, making it solve instantly. First, we have to define
+                    what the rules for sudoku are. 1. Each row and column must
+                    contain a number from 1-9, without repetitions. 2. the
+                    digits can only occur once per block(nonet). 3. The sum of
+                    every single row, column, and nonet must equal 45. Now to
+                    the code. First it has to find an empty cell. For that empty
+                    cell, it has to try each number from 1-9. Then validate the
+                    placement to see if the number in the cell satisfies all
+                    rules. If it is valid, call the solver function to solve the
+                    remaining grid. If no number can be placed that satisfies
+                    all constraints, backtrack by undoing the current placement
+                    and then it tries the next number.
                   </p>
                 </div>
-              </section>
+              </div>
+            </section>
+            <section id="project3" class="project-details">
+              <div class="project-image">
+                <img
+                  class="middle-aligned-image"
+                  src="/images/asteroids.png"
+                  alt="Project 1 Full Image"
+                />
 
-              <section id="project2" class="project-details">
-                <div class="project-image">
+                <a
+                  href="https://github.com/Quilsh-returnTRUE/Asteroids-Clone"
+                  style="padding: 20px"
+                  target="_blank"
+                >
                   <img
-                    class="middle-aligned-image"
-                    src="/images/sudokuPic - Copy.png"
-                    alt="Project 2 Full Image"
+                    src="/images/githubPicBackground.png"
+                    alt="Contact Me"
+                    width="50"
+                    height="50"
+                    title="GitHub"
                   />
-
-                  <a
-                    href="https://github.com/Quilsh-returnTRUE/Sudoku-Solver"
-                    style="padding: 20px"
-                    target="_blank"
-                  >
-                    <img
-                      src="/images/githubPicBackground.png"
-                      alt="Contact Me"
-                      width="50"
-                      height="50"
-                      title="GitHub"
-                    />
-                  </a>
-                  <div class="project-info">
-                    <h2>Sudoku Solver</h2>
-                    <p>
-                      This sudoku solver takes in a 9x9 sudoku board and using
-                      recursive backtracking, systematically solves the board. I
-                      was first making this in python, but realized i could do
-                      it in c++, making it solve instantly. First, we have to
-                      define what the rules for sudoku are. 1. Each row and
-                      column must contain a number from 1-9, without
-                      repetitions. 2. the digits can only occur once per
-                      block(nonet). 3. The sum of every single row, column, and
-                      nonet must equal 45. Now to the code. First it has to find
-                      an empty cell. For that empty cell, it has to try each
-                      number from 1-9. Then validate the placement to see if the
-                      number in the cell satisfies all rules. If it is valid,
-                      call the solver function to solve the remaining grid. If
-                      no number can be placed that satisfies all constraints,
-                      backtrack by undoing the current placement and then it
-                      tries the next number.
-                    </p>
-                  </div>
+                </a>
+                <div class="project-info">
+                  <h2>Asteroid clone</h2>
+                  <p>
+                    This is an asteroid game clone which i never got the time to
+                    finish but all that is left is adding custom sprites like
+                    spaceship and asteroid. There is bullets, the spaceship,
+                    large asteroids, and smaller asteroids. The movement is only
+                    to swivel left & right and to "thurst" to move foward. The
+                    rendering is done with the SFML c++ library. The physics for
+                    drifting when is implemented on the player so the only way
+                    to stop is to turn and thrust the other direction in which
+                    you are moving. Also the large asteroids once hit split into
+                    2 smaller asteroids. Once those small asteroids break, you
+                    get points and they disapear. You also have 3 lives which
+                    can be taken by flying into the asteroids with my collision
+                    detection.
+                  </p>
                 </div>
-              </section>
-              <section id="project3" class="project-details">
-                <div class="project-image">
-                  <img
-                    class="middle-aligned-image"
-                    src="/images/asteroids.png"
-                    alt="Project 1 Full Image"
-                  />
-
-                  <a
-                    href="https://github.com/Quilsh-returnTRUE/Asteroids-Clone"
-                    style="padding: 20px"
-                    target="_blank"
-                  >
-                    <img
-                      src="/images/githubPicBackground.png"
-                      alt="Contact Me"
-                      width="50"
-                      height="50"
-                      title="GitHub"
-                    />
-                  </a>
-                  <div class="project-info">
-                    <h2>Asteroid clone</h2>
-                    <p>
-                      This is an asteroid game clone which i never got the time
-                      to finish but all that is left is adding custom sprites
-                      like spaceship and asteroid. There is bullets, the
-                      spaceship, large asteroids, and smaller asteroids. The
-                      movement is only to swivel left & right and to "thurst" to
-                      move foward. The rendering is done with the SFML c++
-                      library. The physics for drifting when is implemented on
-                      the player so the only way to stop is to turn and thrust
-                      the other direction in which you are moving. Also the
-                      large asteroids once hit split into 2 smaller asteroids.
-                      Once those small asteroids break, you get points and they
-                      disapear. You also have 3 lives which can be taken by
-                      flying into the asteroids with my collision detection.
-                    </p>
-                  </div>
-                </div>
-              </section>
-            </div>
+              </div>
+            </section>
           </div>
-          <footer class="footer">
-            <p>&copy; 2024 John Shallbetter. All rights reserved.</p>
-            <h1>Contact Me</h1>
-            <a
-              href="https://www.instagram.com/johnshallbetter?igsh=MXh5M2RueDIwdmlmcw%3D%3D&utm_source=qr"
-              style="padding: 10px; color: transparent"
-              target="_blank"
-            >
-              <img
-                src="/images/whiteinstabackground.png"
-                alt="Contact Me"
-                width="auto"
-                height="45"
-                title="Social Media"
-              />
-            </a>
-            <a
-              href="mailto:johnrshallbetter@gmail.com"
-              style="padding: 10px; color: transparent"
-              taget="_blank"
-            >
-              <img
-                src="/images/whitemailbackground.png"
-                alt="Contact Me"
-                width="auto"
-                height="45"
-                title="Send me an email"
-              />
-            </a>
-
-            <a
-              href="https://www.youtube.com/channel/UCbEfaSnAUjwGj9jniYfE_FQ"
-              style="padding: 10px; color: transparent"
-              target="_blank"
-            >
-              <img
-                src="/images/ytLogoBackground.png"
-                alt="Contact Me"
-                width="auto"
-                height="45"
-                title="Social Media"
-              />
-            </a>
-          </footer>
         </div>
-
-        <div style="margin-top: 80px" class="container">
-          <img
-            src="images/gradpicCropped.png"
-            alt="gradpicCropped"
-            class="centered-image"
-          />
-          <p>
-            I am a 17 year old software engineer going onto my freshman year at
-            the University Of South Alabama, currently getting a major in
-            computer science.Also, i am joining the Alabama Army National Gaurd
-            with the hopes of my MOS being 15W, which is UAV piloting.
-          </p>
-
-          <div class="lang" style="margin-bottom: 13px; margin-top: 13px">
-            <img
-              src="/images/javajavajava.png"
-              height="75"
-              alt="java logo"
-              title="Java Script"
-            />
-            <img
-              src="/images/htmllogo (1).png"
-              height="75"
-              alt="html logo"
-              title="HTML"
-            />
-            <img
-              src="/images/cssBackground.png"
-              height="75"
-              alt="css logo"
-              title="CSS"
-            />
-          </div>
-          <div class="lang" style="margin-bottom: 13px">
-            <img
-              src="/images/c++trans.png"
-              height="75"
-              width="75"
-              alt="language: C++"
-              title="C++"
-            />
-            <img
-              src="/images/pythonlogotrans.png"
-              height="75"
-              alt="python logo"
-              title="Python"
-            />
-          </div>
-
+        <footer class="footer">
+          <p>&copy; 2024 John Shallbetter. All rights reserved.</p>
+          <h1>Contact Me</h1>
           <a
-            href="https://github.com/Quilsh-returnTRUE"
-            style="padding: 20px"
+            href="https://www.instagram.com/johnshallbetter?igsh=MXh5M2RueDIwdmlmcw%3D%3D&utm_source=qr"
+            style="padding: 10px; color: transparent"
             target="_blank"
           >
             <img
-              src="/images/githubPicBackground.png"
+              src="/images/whiteinstabackground.png"
               alt="Contact Me"
-              width="50"
-              height="50"
-              title="GitHub"
+              width="auto"
+              height="45"
+              title="Social Media"
             />
           </a>
-        </div>
+          <a
+            href="mailto:johnrshallbetter@gmail.com"
+            style="padding: 10px; color: transparent"
+            taget="_blank"
+          >
+            <img
+              src="/images/whitemailbackground.png"
+              alt="Contact Me"
+              width="auto"
+              height="45"
+              title="Send me an email"
+            />
+          </a>
+
+          <a
+            href="https://www.youtube.com/channel/UCbEfaSnAUjwGj9jniYfE_FQ"
+            style="padding: 10px; color: transparent"
+            target="_blank"
+          >
+            <img
+              src="/images/ytLogoBackground.png"
+              alt="Contact Me"
+              width="auto"
+              height="45"
+              title="Social Media"
+            />
+          </a>
+        </footer>
       </div>
     </main>
   </body>

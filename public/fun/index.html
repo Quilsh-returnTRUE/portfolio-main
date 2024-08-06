@@ -7,14 +7,56 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="../style.css" />
   </head>
-  <body class="click-box">
-    <div id="box">
+  <body class="grad">
+    <div
+      style="
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+        margin-top: 10%;
+      "
+    >
+      <div id="box">
         <span id="clickCount">0</span>
+      </div>
+      <script src="../script.js"></script>
     </div>
-    <script src="../script.js"></script>
-
-    <div style="display: block; text-decoration: none; background-color:rgb(79, 174, 174); border: 2px solid white; border-radius:8px;">
-        <a style="color:white;" href="/">Return Home</a>
+    <div
+      style="
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+        margin-top: 5%;
+        color: white;
+      "
+    >
+      <p>You are stuck. Click 20 times to escape</p>
     </div>
   </body>
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const box = document.getElementById("box");
+    const clickCountSpan = document.getElementById("clickCount");
+    let clickCount = 0;
+    let rotation = 0;
+
+    box.addEventListener("click", () => {
+      clickCount++;
+      rotation += 90;
+      box.style.transform = `rotate(${rotation}deg)`;
+      clickCountSpan.textContent = clickCount;
+
+      console.log("Click");
+      if (clickCount >= 20) {
+        window.location.replace("/");
+        console.log("hi");
+      }
+    });
+  });
+</script>
